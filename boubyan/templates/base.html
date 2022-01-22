@@ -1,0 +1,61 @@
+{% load cms_tags menu_tags sekizai_tags staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% page_attribute "meta_description" %}">
+    <title>{% page_attribute "page_title" %}-Boubyan Bank</title>
+
+    <!-- links CSS and Bootstrap files -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style type="text/css">
+        .nav {
+            padding-left: 0;
+        }
+        .nav li {
+            display: inline;
+            list-style-type: none;
+            padding-right: 20px;  
+        }
+    </style>
+    {% render_block "css" %}
+
+</head>
+<body>
+    {% cms_toolbar %}
+    <!-- start header -->
+    <header>
+        <!-- start navbar -->
+        <div class="header-bottom row">
+            <nav class="navbar navbar-expand-lg navbar-light ml-5">
+                <a class="navbar-brand logo" href="/">
+                    <img src="{% static 'img/BoubyanBankLogo.svg' %}" width="" height="" alt="logo">
+                </a>
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav">
+                            {% show_menu 0 100 100 100 %}
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    {% block content %}{% endblock content %}
+
+
+
+    <!-- links js files -->
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/all.js' %}"></script>
+    {% render_block "js" %}
+
+</body>
+</html>

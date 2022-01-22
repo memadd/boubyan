@@ -1,0 +1,471 @@
+
+/* start header */
+.header-top{
+    background-color: #54575a;
+    padding: 5px;
+    padding-left: 130px;
+    color: white;
+}
+.header-left a {
+    color: white;
+    margin: 10px;
+}
+.header-right a {
+    color: white;
+    margin: 10px;
+}
+/* start navbar */
+.search{
+    display: none;
+}
+.btn-login{
+    display: none;
+}
+.logo img{
+    width: 155px;
+    height: 53px;
+}
+.user{
+    display: none;
+}
+.nav-link{
+    font-weight: bold;
+    color: black;
+}
+.nav-span{
+    font-size: 0.8em;
+}
+.nav-item{
+    margin-right: 16px;
+}
+/* start media in header */
+@media screen and (max-width: 1224px) {
+    .nav-span{
+        display: none;
+    }
+    .nav-item{
+        margin-right: 7px;
+    }
+      
+}
+@media screen and (max-width: 992px) {
+    .header-top{
+        display: none;
+    }
+    .header-bottom{
+        margin: 0px 0px 0px 0px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 10px;
+        z-index: 1071;
+    }
+    .logo{
+        position: fixed;
+        left: 40%;
+    }
+    .navbar{
+        align-items: baseline;
+    }
+    .btn-login{
+        display: block;
+        position: fixed;
+        left: 77%;
+    }
+    .search{
+        display: block;
+        position: fixed;
+        left: 30%;
+    }
+    .nav-search .fas{
+        display: none;
+    }
+    .nav-btn{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .user{
+        display: block;
+        position: fixed;
+        left: 80%;
+    }
+    .btn-login{
+        display: none;
+    }
+    .nav-item{
+        margin-right: 7px;
+    }
+    .search {
+        display: block;
+        position: fixed;
+        left: 88%;
+        margin-left: 0px;
+    }
+    .logo {
+        position: fixed;
+        left: 27%;
+    }
+    .nav-btn{
+        display: none;
+    }
+}
+/* start main */
+main{
+    margin: 0px 0px 200px 0px ;
+}
+.row{
+    margin-right: 0px;
+}
+/* start top main */
+.container-fluad{
+    background-color: #efefef;
+}
+.links-path{
+    margin-top: 50px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.links-path a{
+    font-weight: 400;
+}
+/* start body main & card-1 */
+.body-text-con{
+    float: right;
+}
+.body-img{
+    display: flex;
+    float: left;
+}
+.body-text1{
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-top: 30%;
+}
+.body-text-con img{
+    border-radius: 7px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+.body-text3{
+    font-weight: bold;
+}
+/* start card-2 & card-3 & card-4 */
+.card-1{
+    margin: 100px 0px 100px 0px;
+}
+.text-head{
+    margin: 50px 0px 50px 0px;
+    margin-bottom: 70px;
+}
+.icon{
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+.h-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.card-text{
+    width: 70%;
+    margin: auto;
+    font-size: .7em;
+}
+.card-2{
+    background-color: #faf8f8;
+    padding-top: 30px;
+}
+.icon-2{
+    color: rgb(170, 67, 67);
+    background-color: #efefef;
+    height: 30px;
+    width: 33px;
+    padding-top: 3px;
+    text-align: center;
+}
+.cards-2{
+    background-color: #fff;
+    display: inline-block;
+    padding-top: 15px;
+}
+.slider{
+    display: none;
+}
+.cards-slider{
+    background-color: #fff;
+    display: inline-block;
+    padding-top: 15px;
+}
+.cards-slider-2{
+    background-color: #fff;
+    display: inline-block;
+    padding-top: 15px;
+    padding: 0px;
+    border-radius: 7px;
+}
+/* start card-5 but same class card-1 */
+.icon-3{
+    border-radius: 7px;
+}
+.p{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+    font-size: 0.7em;
+}
+.h-text-3{
+    font-size: 1em;
+    font-weight: bold;
+}
+.text-head h3{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.text-head h5{
+    font-size: .8em;
+}
+.icon-4{
+    width: 60%;
+    margin: auto;
+    color: #03a9f3;
+} 
+/* start card-6 */
+.social-img-fig{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+.social-img-fig p{
+    padding: 20px 0px 0px 20px ;
+    font-weight: bold;
+}
+/* start card download */
+.download{
+    padding: 100px 50px 100px 50px;
+    text-align: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)
+}
+.download img{
+    border-radius: 10px;
+}
+/* start media in main */
+@media screen and (max-width: 992px) {
+    .body-text1{
+        font-size: 1.4em;
+        font-weight: bold;
+        margin-top: 30%;
+    }
+    .container-fluad .container{
+        padding: 0px;
+        margin: 0px;
+        display: inline;
+    }
+    .links-path{
+        margin-left: 30px;
+    }
+    .slider{
+        display: block;
+    }
+    .cards-2{
+        display: none;
+    }
+    .text-head a img{
+        width: 70%;
+    }
+    .hide{
+        display: none;
+    }
+    .icon-4{
+        width: 100%;
+    }
+    .icon-4{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .body-text1{        
+        margin-top: 0px;
+    }
+    .body-text-con{
+        float: none;
+        text-align: center;
+    }
+    .logo-2{
+        margin-left: 13em;
+    }
+    .text-head a img{
+        width: 50%;
+    }
+    .icon-4{
+        width: 100%;
+        
+    }
+    .icon-4{
+        width: 100%;
+    }
+}
+/* start footer */
+footer{
+    background-color: #54575a;
+    padding: 50px 0px 50px 0px;
+    color: white;
+}
+.footer-text h6{
+    font-size: 0.7em;
+    font-weight: bold;
+}
+.footer-text p{
+    font-size: 0.7em;
+}
+.footer-text-bottom p{
+    font-size: 0.5em;
+    margin-left: 10px;
+
+}
+.footer-text-bottom h6{
+    font-size: 0.5em;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.footer-bottom{
+    border-radius: 10px;
+    padding: 6px 0px 0px 25px;
+    background-color: #4c5153;
+    height: fit-content;
+    height: 55px;
+}
+.footer-text-bottom h6:last-child{
+    margin-top: 10px;
+}
+/* start dropdown menu */
+.center {
+max-width: 1989px;
+margin: 0 auto;
+}
+.rotate {
+transform: rotate(180deg);
+}
+.menu {
+width: 100%;
+color: white;
+margin: 0 auto;
+background-color: rgb(221, 221, 221);
+display: none;
+}
+.main h2 {
+font-size: 40px;
+text-align: center;
+color: #6497b1;
+font-family: "Cedarville Cursive";
+}
+.main .menuTitle {
+width: 100%;
+padding: 20px 30px;
+color: white;
+background-color: #4c5153;
+margin: 0 auto;
+font-size: 25px;
+display: flex;
+justify-content: space-between;
+border-bottom: 1px solid #000;
+}
+i {
+transition: 500ms;
+}
+.menuTitle:hover {
+cursor: pointer;
+}
+.menu ul {
+list-style-type: none;
+}
+.menu ul li {
+background-color: rgb(221, 221, 221);
+padding: 2px 0px;
+border-bottom: 1px solid #ccc;
+}
+.menu ul li:hover {
+cursor: pointer;
+}
+.menu ul li a {
+text-decoration: none;
+color: black;
+font-weight: lighter;
+font-size: 1.5em;
+}
+.main{
+    display: none;
+}
+/* start bottom-bar */
+.bottom-bar{
+    background: white;
+    font-size: .7em;
+    color: darkblue;
+}
+.bottom-bar div div div p{
+    margin: 12px 0px;
+}
+.bottom-links{
+    margin: 12px 0px;
+}
+.bottom-links a{
+    color: darkblue;
+    margin-right: 7px;
+}
+/* start media footer */
+@media screen and (max-width: 992px) {
+    footer {
+        display: none;
+    }
+    .bottom-bar{
+        display: none;
+    }
+    .bottom-links a{
+        color: darkblue;
+        margin-right: 0px;
+    }
+} 
+.footer-bottom-sm{
+    border-radius: 10px;
+    padding: 11px 0px 0px 25px;
+    background-color: #46494b;
+    display: flow-root
+}
+@media screen and (max-width: 600px) {
+    footer {
+        display: block;
+        padding: 0px;
+    }
+    footer .container{
+        display: none;
+    }
+    .main{
+        display: block;
+        border-bottom: 10px solid red
+    }
+    .footer-text-bottom h6{
+        font-size: 0.8em;
+        font-weight: normal;
+        color: #f8f8f8;
+        margin: 0px;
+        margin-left: 10px;
+    }
+    .footer-text-bottom p{
+        font-size: 0.8em;
+        margin-left: 10px;
+        color: #f8f8f8;
+    }
+    .download{
+        position: relative;
+        top: 44em;
+        background-color: #fff;
+        z-index: 1071;
+        box-shadow: none;
+        padding: 20px 50px 20px 50px
+    }
+    main{
+        margin: 0px;
+    }
+}
